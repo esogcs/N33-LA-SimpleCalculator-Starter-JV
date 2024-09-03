@@ -20,7 +20,7 @@ namespace SimpleCalculator
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
-                Console.WriteLine(result);
+                Console.WriteLine("The result is: " + result);
 
             } catch (Exception ex)
             {
