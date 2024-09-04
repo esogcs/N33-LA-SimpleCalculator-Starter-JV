@@ -6,7 +6,8 @@ namespace SimpleCalculator
     {
         public static double ConvertInputToNumeric(string argTextInput)
         {
-            return 0;
+            int result = Int32.Parse(argTextInput);
+            return result;
         }
     }
 }
