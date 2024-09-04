@@ -18,9 +18,11 @@ namespace SimpleCalculator
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                Console.WriteLine("Enter a number, a plus operator or write add and then another number (ex. 5 + 5)");
+                Console.WriteLine("Enter a number: ");
                 double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                Console.WriteLine("Enter a second number: ");
                 double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                Console.WriteLine("Enter an operator: ");
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
