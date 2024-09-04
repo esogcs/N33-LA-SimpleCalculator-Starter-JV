@@ -13,17 +13,25 @@ namespace SimpleCalculator
             try
             {
                 // Class to convert user input
-                InputConverter inputConverter = new InputConverter();
+                //InputConverter inputConverter = new InputConverter();
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                Console.WriteLine("Enter a number, a plus operator or write add and then another number (ex. 5 + 5)");
-
-              double firstNumber = inputConverter.(Console.ReadLine());
-
-                double secondNumber = inputConverter.(Console.ReadLine());
-
+                Console.WriteLine("Enter a number: ");
+                double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                while (firstNumber is String) {
+                    Console.WriteLine("Invalid text. Enter a number: ");
+                    firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                }
+                Console.WriteLine("Enter a second number: ");
+                double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                while (secondNumber is String)
+                {
+                    Console.WriteLine("Invalid text. Enter a number: ");
+                    secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                }
+                Console.WriteLine("Enter an operator: ");
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
