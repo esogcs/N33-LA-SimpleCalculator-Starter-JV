@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculatorLibrary
+namespace CalcLibrary
 {
     public class Class1
     {
         public static decimal add(decimal a, decimal b)
-        {
-            return a + b;
-        }
+        { return a + b; };
     }
 }
