@@ -26,6 +26,11 @@ namespace SimpleCalculator
                 }
                 Console.WriteLine("Enter a second number: ");
                 double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                while (secondNumber is String)
+                {
+                    Console.WriteLine("Invalid text. Enter a number: ");
+                    secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                }
                 Console.WriteLine("Enter an operator: ");
                 string operation = Console.ReadLine();
 
