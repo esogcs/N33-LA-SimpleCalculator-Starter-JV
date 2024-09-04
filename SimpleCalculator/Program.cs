@@ -20,6 +20,10 @@ namespace SimpleCalculator
 
                 Console.WriteLine("Enter a number: ");
                 double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                while (firstNumber is String) {
+                    Console.WriteLine("Invalid text. Enter a number: ");
+                    firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                }
                 Console.WriteLine("Enter a second number: ");
                 double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
                 Console.WriteLine("Enter an operator: ");
