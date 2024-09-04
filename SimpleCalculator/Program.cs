@@ -19,8 +19,11 @@ namespace SimpleCalculator
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
                 Console.WriteLine("Enter a number, a plus operator or write add and then another number (ex. 5 + 5)");
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
-                double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+
+              double firstNumber = inputConverter.(Console.ReadLine());
+
+                double secondNumber = inputConverter.(Console.ReadLine());
+
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
@@ -30,6 +33,7 @@ namespace SimpleCalculator
             } catch (Exception ex)
             {
                 // Normally, we'd log this error to a file.
+
                 Console.WriteLine(ex.Message);
             }
 
