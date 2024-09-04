@@ -12,5 +12,23 @@ namespace CalculatorLibrary
         {
             return a + b;
         }
+
+        public static decimal subtract(decimal a, decimal b)
+        {
+            return a - b;
+        }
+
+        public static decimal multiply(decimal a, decimal b)
+        {
+            return a * b;
+        }
+        public static decimal divive(decimal a, decimal b)
+        {
+            return a / b;
+        }
+        public static decimal modulus(decimal a, decimal b)
+        {
+            return a % b;
+        }
     }
 }
