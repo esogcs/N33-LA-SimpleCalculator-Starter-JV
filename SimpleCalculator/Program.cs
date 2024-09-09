@@ -28,6 +28,7 @@ namespace SimpleCalculator
                 double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 while (secondNumber is String)
                 {
+
                     Console.WriteLine("Invalid text. Enter a number: ");
                     secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 }
