@@ -34,7 +34,7 @@ namespace CalculatorLibrary
         {
             if (b == 0)
             {
-                throw new DivideByZeroException("Cannot divide by 0");
+                throw new DivideByZeroException("Cannot do modulus by 0");
             }
             return a % b;
         }
