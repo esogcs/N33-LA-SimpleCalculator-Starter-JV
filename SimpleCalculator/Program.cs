@@ -6,14 +6,8 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            var a = 2.2m;
-            var b = 5.5m;
-            var c = CalculatorLibrary.CalcUtilities.add(a, b);
-
             try
             {
-                // Class to convert user input
-                //InputConverter inputConverter = new InputConverter();
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
