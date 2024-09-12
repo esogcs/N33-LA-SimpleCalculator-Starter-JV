@@ -27,7 +27,7 @@ namespace SimpleCalculator
                         break;
 
                     default: // User enters >0 number
-                        Console.WriteLine("The result is " + result); 
+                        result = argFirstNumber / argSecondNumber;
                         break;
                 }
                }
@@ -47,7 +47,7 @@ namespace SimpleCalculator
                         break;
 
                     default:
-                        Console.WriteLine("The resut is" + result);
+                        result = argFirstNumber % argSecondNumber;
                         break;
                 }
             }

@@ -26,13 +26,15 @@ namespace SimpleCalculator
                 double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 while (secondNumber is String)
                 {
-                    Console.WriteLine("Invalid text. Enter a number: ");
+                    Console.WriteLine("Invalid number. Enter a number: ");
                     secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 }
             
                 // User enters operator
-                Console.WriteLine("Enter an operator: " );
+                Console.WriteLine("Enter an operator: (+, -, *, /, %)" );
                 string operation = Console.ReadLine();
+
+                // +, -, %, *, / || add, divide, multiply, modulus, minus
 
                 // Display result (add string builder)
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
