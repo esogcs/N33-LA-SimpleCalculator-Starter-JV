@@ -5,12 +5,19 @@ A simple console-based calculator program that allows users to perform basic ari
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Changes](#changes)
 - [Usage](#usage)
 - [Examples](#examples)
 
 ## Introduction
 
 This project is a simple console-based calculator that accepts user input for two numbers and an arithmetic operator. The calculator then performs the corresponding mathematical operation and displays the result in the console.
+
+## Changes
+1. Changed the conversion class to be static.
+2. Added functions to check if the user's number and operator is valid.
+3. Displayed the result in a string builder format
+4. Moved the CalcultatorEngine class to it's own projet to make it a DLL.
 
 ### Supported Operations
 
