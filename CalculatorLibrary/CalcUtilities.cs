@@ -22,12 +22,20 @@ namespace CalculatorLibrary
         {
             return a * b;
         }
-        public static decimal divive(decimal a, decimal b)
+        public static decimal divide(decimal a, decimal b)
         {
+            if (b == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by 0");
+            }
             return a / b;
         }
         public static decimal modulus(decimal a, decimal b)
         {
+            if (b == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by 0");
+            }
             return a % b;
         }
     }
