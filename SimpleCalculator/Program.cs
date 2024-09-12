@@ -11,27 +11,32 @@ namespace SimpleCalculator
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
-
-                Console.WriteLine("Enter a number: ");
+                
+                // User enters 1st number
+                Console.WriteLine("Enter the first number: ");
                 double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
-                while (firstNumber is String) {
+                while (firstNumber is String) 
+                {
                     Console.WriteLine("Invalid text. Enter a number: ");
                     firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 }
-                Console.WriteLine("Enter a second number: ");
+
+                // User enters 2nd number
+                Console.WriteLine("Enter the second number: ");
                 double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 while (secondNumber is String)
                 {
-
                     Console.WriteLine("Invalid text. Enter a number: ");
                     secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 }
-                Console.WriteLine("Enter an operator: ");
+            
+                // User enters operator
+                Console.WriteLine("Enter an operator: " );
                 string operation = Console.ReadLine();
 
+                // Display result (add string builder)
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
-
-                Console.WriteLine("The result is: " + result);
+                Console.WriteLine($"The result is: " + result);
 
             } catch (Exception ex)
             {
