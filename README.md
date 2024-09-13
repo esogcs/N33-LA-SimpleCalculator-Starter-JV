@@ -6,7 +6,7 @@ A simple console-based calculator program that allows users to perform basic ari
 
 - [Introduction](#introduction)
 - [Changes](#changes)
-- [Usage](#usage)
+- [Credits](#credits)
 
 ## Introduction
 
@@ -25,13 +25,6 @@ This project is a simple console-based calculator that accepts user input for tw
 - Multiplication (`*`) // "Multiply"
 - Division (`/`) // "Divide"
 - Modulus (`%`) // "Modulus"
-  
-## Usage
-
-1. Clone the repository or download the source code.
-2. Open the project in your preferred code editor.
-3. Run the console application.
-4. Follow the prompts to enter the operator and numbers.
 
 ### Example
 
