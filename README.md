@@ -7,7 +7,6 @@ A simple console-based calculator program that allows users to perform basic ari
 - [Introduction](#introduction)
 - [Changes](#changes)
 - [Usage](#usage)
-- [Examples](#examples)
 
 ## Introduction
 
@@ -21,11 +20,11 @@ This project is a simple console-based calculator that accepts user input for tw
 
 ### Supported Operations
 
-- Addition (`+`)
-- Subtraction (`-`)
-- Multiplication (`*`)
-- Division (`/`)
-- Modulus (`%`)
+- Addition (`+`) // "Add"
+- Subtraction (`-`) // "Minus"
+- Multiplication (`*`) // "Multiply"
+- Division (`/`) // "Divide"
+- Modulus (`%`) // "Modulus"
   
 ## Usage
 
@@ -45,30 +44,6 @@ Enter an operator: (+, -, *, /, %)
 +
 Result: 14
 ```
-
-## Examples
-
-Here are some examples of the operations you can perform with the calculator:
-
-1. **Addition**  
-   Input: `5 + 3`  
-   Output: `8`
-
-2. **Subtraction**  
-   Input: `10 - 4`  
-   Output: `6`
-
-3. **Multiplication**  
-   Input: `7 * 2`  
-   Output: `14`
-
-4. **Division**  
-   Input: `8 / 2`  
-   Output: `4`
-
-5. **Modulus**  
-   Input: `9 % 4`  
-   Output: `1`
 
 ## Credits
 Made with Jean David Pallares & Jose Villegas
